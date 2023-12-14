@@ -14,7 +14,7 @@ export default function List() {
         onChange={e => setName(e.target.value)}
       />
       <button onClick={() => {
-        artists.push({
+        setArtists(...artists, {
           id: nextId++,
           name: name,
         });
